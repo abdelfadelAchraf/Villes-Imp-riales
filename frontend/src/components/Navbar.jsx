@@ -1,12 +1,26 @@
 // src/components/layout/Header.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Map, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MobileNav from './MobileNav';
 import citiesData from '../assets/constants';
 
-const Navbar = ({ activeCity, setActiveCity }) => {
+const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  
+  // Extract the current active page from the URL path
+  const getCurrentActiveCity = () => {
+    const path = location.pathname;
+    if (path === '/') return 'home';
+    
+    const cityMatch = path.match(/\/city\/(.+)/);
+    if (cityMatch && cityMatch[1]) return cityMatch[1];
+    
+    return '';
+  };
+  
+  const activeCity = getCurrentActiveCity();
 
   return (
     <header className="bg-white shadow-md relative overflow-hidden">
@@ -35,16 +49,14 @@ const Navbar = ({ activeCity, setActiveCity }) => {
           <Link 
             to="/"
             className={`py-2 font-medium ${activeCity === 'home' ? 'text-amber-600 border-b-2 border-amber-600' : 'text-gray-600 hover:text-amber-600'}`}
-            onClick={() => setActiveCity('home')}
           >
             Accueil
           </Link>
           {citiesData.map((city) => (
-            <Link 
+            <Link
               key={city.id}
               to={`/city/${city.id}`}
               className={`py-2 font-medium ${activeCity === city.id ? 'text-amber-600 border-b-2 border-amber-600' : 'text-gray-600 hover:text-amber-600'}`}
-              onClick={() => setActiveCity(city.id)}
             >
               {city.name}
             </Link>
@@ -59,10 +71,9 @@ const Navbar = ({ activeCity, setActiveCity }) => {
       
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <MobileNav 
+        <MobileNav
           activeCity={activeCity} 
-          setActiveCity={setActiveCity} 
-          setMobileMenuOpen={setMobileMenuOpen} 
+          setMobileMenuOpen={setMobileMenuOpen}
         />
       )}
     </header>

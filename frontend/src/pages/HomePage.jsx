@@ -5,6 +5,7 @@ import CityCard from '../components/CityCard';
 import CircuitCard from '../components/CuircuitCard';
 import TargetAudienceCard from '../components/TargetAudienceCard';
 import Approach from '../components/Approach';
+import TestimonialsPage from './TestimonialsPage';
 
 
 const HomePage = ({ setActiveCity }) => {
@@ -28,6 +29,8 @@ const HomePage = ({ setActiveCity }) => {
       </div>
 
       <Approach />
+      <hr />
+      <TestimonialsPage/>
     </div>
   );
 };

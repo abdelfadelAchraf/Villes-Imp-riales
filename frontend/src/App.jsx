@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Import pages
 import HomePage from './pages/HomePage';
@@ -11,19 +11,18 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
 
-
 const App = () => {
   return (
-      <div >
-        <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/city/:id" element={<CityPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path='*' element={<NotFoundPage/>} />
-          </Routes>
-        <Footer />
-      </div>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/city/:id" element={<CityPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path='*' element={<NotFoundPage/>} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 
