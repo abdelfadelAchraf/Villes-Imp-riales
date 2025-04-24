@@ -10,6 +10,8 @@ import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFoundPage';
+import ItineraryPage from './pages/ItineraryPage';
+import GaleriePhotos from './pages/GaleriePhotos ';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/city/:id" element={<CityPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/iteniraire" element={<ItineraryPage />} />
+        <Route path="/photos" element={<GaleriePhotos />} />
         <Route path='*' element={<NotFoundPage/>} />
       </Routes>
       <Footer />

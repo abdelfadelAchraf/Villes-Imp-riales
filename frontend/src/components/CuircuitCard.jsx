@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight, Calendar, Users, Map } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CircuitCard = () => {
   return (
@@ -19,7 +20,7 @@ const CircuitCard = () => {
           </li>
         </ul>
         <button className="w-full bg-amber-600 text-white py-2 px-4 rounded hover:bg-amber-700 transition-colors flex items-center justify-center">
-          <span>Voir l'itinéraire</span>
+       <Link to='/iteniraire'><span>Voir l'itinéraire</span></Link>   
           <ChevronRight size={16} className="ml-1" />
         </button>
       </div>
