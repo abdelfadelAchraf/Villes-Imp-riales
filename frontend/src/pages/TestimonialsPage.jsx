@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const TestimonialsPage = () => {
@@ -80,12 +81,11 @@ const TestimonialsPage = () => {
 
   // State for carousel
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [carouselWidth, setCarouselWidth] = useState(0);
+  const [direction, setDirection] = useState('right');
+  const [itemsToShow, setItemsToShow] = useState(3);
   const carouselRef = useRef(null);
   
   // Calculate items to show based on screen width
-  const [itemsToShow, setItemsToShow] = useState(3);
-  
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
@@ -94,10 +94,6 @@ const TestimonialsPage = () => {
         setItemsToShow(2);
       } else {
         setItemsToShow(3);
-      }
-      
-      if (carouselRef.current) {
-        setCarouselWidth(carouselRef.current.offsetWidth);
       }
     };
     
@@ -108,17 +104,19 @@ const TestimonialsPage = () => {
   
   // Navigation functions
   const nextSlide = () => {
+    setDirection('right');
     setCurrentIndex((prevIndex) => 
-      prevIndex + itemsToShow >= testimonials.length 
+      prevIndex + 1 >= testimonials.length 
         ? 0 
         : prevIndex + 1
     );
   };
   
   const prevSlide = () => {
+    setDirection('left');
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 
-        ? Math.max(0, testimonials.length - itemsToShow) 
+        ? testimonials.length - 1 
         : prevIndex - 1
     );
   };
@@ -145,6 +143,26 @@ const TestimonialsPage = () => {
       );
     }
     return stars;
+  };
+
+  // Variants for animation
+  const variants = {
+    enter: (direction) => {
+      return {
+        x: direction === 'right' ? '100%' : '-100%',
+        opacity: 0
+      };
+    },
+    center: {
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction) => {
+      return {
+        x: direction === 'right' ? '-100%' : '100%',
+        opacity: 0
+      };
+    }
   };
 
   return (
@@ -183,52 +201,61 @@ const TestimonialsPage = () => {
         </div>
         
         {/* Testimonials Carousel */}
-        <div className="relative">
-          <div 
-            ref={carouselRef}
-            className="overflow-hidden"
-          >
-            <div 
-              className="flex transition-transform duration-500 ease-out"
-              style={{ 
-                transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)`,
-                width: `${(testimonials.length / itemsToShow) * 100}%`
-              }}
-            >
-              {testimonials.map((testimonial) => (
-                <div 
-                  key={testimonial.id} 
-                  className="px-4"
-                  style={{ width: `${100 / testimonials.length * itemsToShow}%` }}
-                >
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
-                    <div className="p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="h-12 w-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
-                          <Quote size={24} className="text-amber-600" />
+        <div className="relative overflow-hidden" ref={carouselRef}>
+          <div className="relative h-[400px] md:h-[350px]">
+            <AnimatePresence custom={direction} initial={false}>
+              <motion.div
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 }
+                }}
+                className="absolute inset-0 flex justify-center"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 w-full">
+                  {testimonials
+                    .slice(currentIndex, currentIndex + itemsToShow)
+                    .map((testimonial) => (
+                      <motion.div
+                        key={testimonial.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="bg-white rounded-lg shadow-lg overflow-hidden h-full"
+                      >
+                        <div className="p-6">
+                          <div className="flex items-center mb-4">
+                            <div className="h-12 w-12 rounded-full bg-amber-200 flex items-center justify-center mr-4">
+                              <Quote size={24} className="text-amber-600" />
+                            </div>
+                            <div>
+                              <h3 className="font-bold text-gray-800">{testimonial.name}</h3>
+                              <p className="text-gray-500 text-sm">{testimonial.country}</p>
+                            </div>
+                          </div>
+                          
+                          <div className="flex mb-4">
+                            {renderStars(testimonial.rating)}
+                          </div>
+                          
+                          <p className="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
+                          
+                          <div className="pt-4 border-t border-gray-200">
+                            <span className="inline-block bg-amber-100 rounded-full px-3 py-1 text-sm font-semibold text-amber-700">
+                              {testimonial.heritage}
+                            </span>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-bold text-gray-800">{testimonial.name}</h3>
-                          <p className="text-gray-500 text-sm">{testimonial.country}</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex mb-4">
-                        {renderStars(testimonial.rating)}
-                      </div>
-                      
-                      <p className="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
-                      
-                      <div className="pt-4 border-t border-gray-200">
-                        <span className="inline-block bg-amber-100 rounded-full px-3 py-1 text-sm font-semibold text-amber-700">
-                          {testimonial.heritage}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                      </motion.div>
+                    ))}
                 </div>
-              ))}
-            </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
           
           {/* Navigation Buttons */}
@@ -250,12 +277,15 @@ const TestimonialsPage = () => {
           
           {/* Indicators */}
           <div className="flex justify-center mt-6">
-            {Array.from({ length: Math.ceil(testimonials.length / itemsToShow) }).map((_, index) => (
+            {testimonials.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index * itemsToShow)}
+                onClick={() => {
+                  setDirection(index > currentIndex ? 'right' : 'left');
+                  setCurrentIndex(index);
+                }}
                 className={`h-2 w-2 mx-1 rounded-full ${
-                  index === Math.floor(currentIndex / itemsToShow) 
+                  index === currentIndex 
                     ? 'bg-amber-600' 
                     : 'bg-amber-200'
                 }`}

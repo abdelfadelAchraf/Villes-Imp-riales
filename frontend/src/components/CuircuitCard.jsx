@@ -20,7 +20,7 @@ const CircuitCard = () => {
           </li>
         </ul>
         <button className="w-full bg-amber-600 text-white py-2 px-4 rounded hover:bg-amber-700 transition-colors flex items-center justify-center">
-       <Link to='/iteniraire'><span>Voir l'itinéraire</span></Link>   
+       <Link to='/iteniraire'><button>Voir l'itinéraire</button></Link>   
           <ChevronRight size={16} className="ml-1" />
         </button>
       </div>
