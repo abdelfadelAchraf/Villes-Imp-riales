@@ -34,7 +34,7 @@ const ItineraryPage = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <Link to="/" className="flex items-center text-blue-600 mb-6 hover:text-blue-800">
+      <Link to="/" className="flex items-center text-orange-500 mb-6 hover:text-orange-800">
         <ArrowLeft className="mr-2 h-5 w-5" />
         Retour aux circuits
       </Link>
