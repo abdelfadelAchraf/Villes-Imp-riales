@@ -124,7 +124,10 @@ const MobileNav = ({ activeCity, setMobileMenuOpen }) => {
                       ? 'bg-amber-50 text-amber-600'
                       : 'text-gray-600 hover:bg-amber-50 hover:text-amber-600'
                   }`}
-                  onClick={toggleMenu}
+                  onClick={() => {
+                    toggleMenu();
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   Accueil
                 </Link>
