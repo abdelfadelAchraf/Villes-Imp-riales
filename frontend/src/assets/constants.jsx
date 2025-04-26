@@ -24,7 +24,7 @@ const citiesData = [
       description: 'Capitale du Maroc, Rabat allie patrimoine historique et modernité avec élégance le long de la côte atlantique.',
       sites: ['Tour Hassan', 'Mausolée Mohammed V', 'Kasbah des Oudayas'],
       traditions: ['Festival Mawazine', 'Tapis rbati', 'Art contemporain'],
-      image: 'https://placehold.co/600x400'
+      image: 'https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/tour-hassan-rabat-morocco-by-migel.jpg?itok=YP8GLwSi'
     },
     {
       id: 'marrakech',
@@ -33,7 +33,7 @@ const citiesData = [
       description: 'La "ville rouge" est réputée pour sa médina animée, ses jardins luxuriants et son ambiance envoûtante.',
       sites: ['Place Jemaa el-Fna', 'Jardins de Majorelle', 'Palais de la Bahia'],
       traditions: ['Halqa (conteurs)', 'Festival international du film', 'Artisanat et souks'],
-      image: 'https://placehold.co/600x400'
+      image: 'https://st4.depositphotos.com/12052680/38696/i/600/depositphotos_386968932-stock-photo-koutoubia-mosque-minaret-medina-quarter.jpg'
     }
   ];
   
