@@ -6,7 +6,7 @@ const citiesData = [
       description: 'Capitale culturelle et spirituelle du Maroc, Fès est célèbre pour sa médina médiévale préservée et son artisanat traditionnel.',
       sites: ['Médina de Fès (UNESCO)', 'Université Al Quaraouiyine', 'Tanneries de Fès'],
       traditions: ['Festival de la musique sacrée', 'Artisanat du cuir et de la céramique', 'Gastronomie fassi'],
-      image: 'https://media.istockphoto.com/id/182059497/fr/photo/le-maroc.jpg?b=1&s=612x612&w=0&k=20&c=BTQW9NvdbiZ1BQsE5FtdUeCK0nNBKBJTWXtHZIDsBb4='
+      image: 'https://african-wanderlust.com/wp-content/uploads/2018/11/Fes-Maroc-Les-tanneries-Chouara-01.jpg'
     },
     {
       id: 'meknes',
