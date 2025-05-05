@@ -7,7 +7,7 @@ html{
 }
 *{
   font-family: "Outfit", sans-serif;
-  user-select: none;
+
   scrollbar-width: thin;
 }
 button{
