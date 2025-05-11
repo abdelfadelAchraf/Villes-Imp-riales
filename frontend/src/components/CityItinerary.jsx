@@ -134,8 +134,9 @@ const CityItinerary = ({ cityName }) => {
                 />
               </div>
               <div className="md:col-span-2">
-                <h3 className="text-lg font-bold text-gray-800">{place.name}</h3>
+                <h3 className="text-4xl font-bold text-gray-800">{place.name}</h3>
                 <p className="text-gray-700 my-2">{place.description}</p>
+                <p className="text-gray-600 my-2">{place.culturalSignificance}</p>
                 <div className="mt-4">
                   <h4 className="font-semibold text-amber-800">Personnalités liées:</h4>
                   <ul className="list-disc list-inside text-gray-700">
