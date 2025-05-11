@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { cityData } from '../assets/constants';
+import MarocTourismData from './MarocTourismData';
 
 
 
@@ -33,6 +34,7 @@ const CityItinerary = ({ cityName }) => {
       y2: p2.position.y + "%"
     };
   };
+
 
   // Function to render the connection lines
   const renderConnections = () => {
@@ -106,7 +108,7 @@ const CityItinerary = ({ cityName }) => {
               onClick={() => handlePlaceClick(place.id)}
             >
               <div className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md transition-all duration-200
-                ${place.id === selectedPlace ? 'bg-amber-600 text-white scale-110' : 'bg-white text-amber-600 border-2 border-amber-600 hover:bg-amber-100'}`}>
+                ${place.id === selectedPlace ? 'bg-amber-600 text-white scale-110 h-14 w-14' : 'bg-white text-amber-600 border-2 border-amber-600 hover:bg-amber-100'}`}>
                 <span className="font-bold">{place.id}</span>
               </div>
               <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-1 px-2 py-1 bg-white text-amber-800 text-xs font-medium rounded shadow-sm whitespace-nowrap transition-opacity duration-200 ${selectedPlace === place.id ? 'opacity-0' : 'opacity-100'}`}>
@@ -150,6 +152,7 @@ const CityItinerary = ({ cityName }) => {
           ))}
         </div>
       )}
+      <MarocTourismData/>
     </div>
   );
 };
