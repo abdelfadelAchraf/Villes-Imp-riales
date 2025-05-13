@@ -1,46 +1,47 @@
 const citiesData = [
-    {
-      id: 'fes',
-      name: 'Fès',
-      founded: 'Fondée par Idris Ier entre 789 et 809',
-      description: 'Capitale culturelle et spirituelle du Maroc, Fès est célèbre pour sa médina médiévale préservée et son artisanat traditionnel.',
-      sites: ['Médina de Fès (UNESCO)', 'Université Al Quaraouiyine', 'Tanneries de Fès'],
-      traditions: ['Festival de la musique sacrée', 'Artisanat du cuir et de la céramique', 'Gastronomie fassi'],
-      image: 'https://african-wanderlust.com/wp-content/uploads/2018/11/Fes-Maroc-Les-tanneries-Chouara-01.jpg'
-    },
-    {
-      id: 'meknes',
-      name: 'Meknès',
-      founded: 'Fondée au XIe siècle par les Almoravides',
-      description: 'Surnommée la "Versailles du Maroc", Meknès est connue pour ses monuments imposants datant du règne du Sultan Moulay Ismaïl.',
-      sites: ['Bab Mansour', 'Mausolée de Moulay Ismaïl', 'Greniers Royaux'],
-      traditions: ['Festival international du film d\'animation', 'Arts équestres', 'Fabrication de damasquinerie'],
-      image: 'https://aml.ma/sites/default/files/2022-05/meknes-destinations-au-maroc-bateau-ferry-espagne-maroc-ferry-bateau-maroc-espagne-aml.jpg'
-    },
-    {
-      id: 'rabat',
-      name: 'Rabat',
-      founded: 'Fondée par le sultan almohade Abd al-Mumin en 1150',
-      description: 'Capitale du Maroc, Rabat allie patrimoine historique et modernité avec élégance le long de la côte atlantique.',
-      sites: ['Tour Hassan', 'Mausolée Mohammed V', 'Kasbah des Oudayas'],
-      traditions: ['Festival Mawazine', 'Tapis rbati', 'Art contemporain'],
-      image: 'https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/tour-hassan-rabat-morocco-by-migel.jpg?itok=YP8GLwSi'
-    },
-    {
-      id: 'marrakech',
-      name: 'Marrakech',
-      founded: 'Fondée par Youssef Ibn Tachfin en 1062',
-      description: 'La "ville rouge" est réputée pour sa médina animée, ses jardins luxuriants et son ambiance envoûtante.',
-      sites: ['Place Jemaa el-Fna', 'Jardins de Majorelle', 'Palais de la Bahia'],
-      traditions: ['Halqa (conteurs)', 'Festival international du film', 'Artisanat et souks'],
-      image: 'https://st4.depositphotos.com/12052680/38696/i/600/depositphotos_386968932-stock-photo-koutoubia-mosque-minaret-medina-quarter.jpg'
-    }
-  ];
-  
+  {
+    id: 'fes',
+    name: 'Fès',
+    founded: 'Fondée par Idris Ier entre 789 et 809',
+    description: 'Capitale culturelle et spirituelle du Maroc, Fès est célèbre pour sa médina médiévale préservée et son artisanat traditionnel.',
+    sites: ['Médina de Fès (UNESCO)', 'Université Al Quaraouiyine', 'Tanneries de Fès'],
+    traditions: ['Festival de la musique sacrée', 'Artisanat du cuir et de la céramique', 'Gastronomie fassi'],
+    image: 'https://african-wanderlust.com/wp-content/uploads/2018/11/Fes-Maroc-Les-tanneries-Chouara-01.jpg'
+  },
+  {
+    id: 'meknes',
+    name: 'Meknès',
+    founded: 'Fondée au XIe siècle par les Almoravides',
+    description: 'Surnommée la "Versailles du Maroc", Meknès est connue pour ses monuments imposants datant du règne du Sultan Moulay Ismaïl.',
+    sites: ['Bab Mansour', 'Mausolée de Moulay Ismaïl', 'Greniers Royaux'],
+    traditions: ['Festival international du film d\'animation', 'Arts équestres', 'Fabrication de damasquinerie'],
+    image: 'https://aml.ma/sites/default/files/2022-05/meknes-destinations-au-maroc-bateau-ferry-espagne-maroc-ferry-bateau-maroc-espagne-aml.jpg'
+  },
+  {
+    id: 'rabat',
+    name: 'Rabat',
+    founded: 'Fondée par le sultan almohade Abd al-Mumin en 1150',
+    description: 'Capitale du Maroc, Rabat allie patrimoine historique et modernité avec élégance le long de la côte atlantique.',
+    sites: ['Tour Hassan', 'Mausolée Mohammed V', 'Kasbah des Oudayas'],
+    traditions: ['Festival Mawazine', 'Tapis rbati', 'Art contemporain'],
+    image: 'https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/tour-hassan-rabat-morocco-by-migel.jpg?itok=YP8GLwSi'
+  },
+  {
+    id: 'marrakech',
+    name: 'Marrakech',
+    founded: 'Fondée par Youssef Ibn Tachfin en 1062',
+    description: 'La "ville rouge" est réputée pour sa médina animée, ses jardins luxuriants et son ambiance envoûtante.',
+    sites: ['Place Jemaa el-Fna', 'Jardins de Majorelle', 'Palais de la Bahia'],
+    traditions: ['Halqa (conteurs)', 'Festival international du film', 'Artisanat et souks'],
+    image: 'https://st4.depositphotos.com/12052680/38696/i/600/depositphotos_386968932-stock-photo-koutoubia-mosque-minaret-medina-quarter.jpg'
+  }
+];
 
-  
-  
-  export default citiesData;
+
+
+
+export default citiesData;
+
 export const cityData = {
   "marrakech": {
     name: "Marrakech",
@@ -51,7 +52,8 @@ export const cityData = {
         id: 1,
         name: "Mosquée Koutoubia",
         description: "Monument emblématique de Marrakech avec son minaret haut de 77 mètres datant du 12ème siècle. Son architecture almohade sert de point de repère dans la ville et inspire depuis des siècles artistes et photographes du monde entier.",
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4np7buUgzqjkDe1tqTxQL1fw-fdamoUONerAudtkN1BexKiMgHpJHPZi4OByseYiLYQacwTZBfv_kNVu5UAM5Xh6LZyW4kLIYmaA6cVc2G5b1lTqsJAafGuLLVObW8p_VWjqSh-_wA=s680-w680-h510-rw",
+        image: "https://www.alksar.com/wp-content/uploads/2018/11/Vue-de-la-Koutoubia-Marrakech-et-ruines-de-la-primo-mosquee-2.jpg",
+        image2: "https://cdn.getyourguide.com/img/location/5cf67dbfcdb6e.jpeg/99.jpg",
         famousPeople: ["Architecte Abd al-Mu'min", "Sultan Yacoub el-Mansour", "Calligraphe Ibn Yabka"],
         position: { x: 20, y: 20 },
         connections: [2],
@@ -61,7 +63,9 @@ export const cityData = {
         id: 2,
         name: "Place Jemaa el-Fna",
         description: "Célèbre place de Marrakech, reconnue par l'UNESCO comme chef-d'œuvre du patrimoine oral de l'humanité. Ce théâtre à ciel ouvert offre un spectacle permanent où se croisent conteurs, acrobates, dresseurs de singes et vendeurs d'oranges pressées.",
-        image: "/api/placeholder/400/300",
+        image: "https://www.marrakech-private-resort.com/wp-content/uploads/2019/10/place-jeema-el-fna-nuit-768x426.png",
+        image2: "https://www.locmarrakech.com/tourisme/wp-content/uploads/2019/08/Medina.jpg",
+       
         famousPeople: ["Musiciens Gnaouas", "Conteurs traditionnels", "Le célèbre charmeur de serpents Bachir Attar"],
         position: { x: 70, y: 20 },
         connections: [1, 3],
@@ -71,7 +75,9 @@ export const cityData = {
         id: 3,
         name: "Jardin Majorelle",
         description: "Oasis de sérénité créé par le peintre français Jacques Majorelle et sauvegardé par Yves Saint Laurent. Ce jardin botanique aux teintes de bleu cobalt abrite une collection impressionnante de cactus et plantes exotiques du monde entier.",
-        image: "/api/placeholder/400/300",
+        image: "https://stayhere.ma/wp-content/uploads/2024/08/shutterstock_2411992785-1-scaled.jpg",
+        image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f2/0b/92/marrakech-new-city.jpg?w=1200&h=-1&s=1",
+
         famousPeople: ["Jacques Majorelle", "Yves Saint Laurent", "Pierre Bergé"],
         position: { x: 30, y: 50 },
         connections: [2, 4],
@@ -170,7 +176,7 @@ export const cityData = {
         description: "Joyau architectural mérinide du XIVe siècle alliant spiritualité et excellence artistique. Ses cours intérieures ornées de calligraphies, de mosaïques et de boiseries sculptées témoignent du raffinement extrême de l'art islamique marocain.",
         image: "/api/placeholder/400/300",
         famousPeople: ["Sultan Abu Inan Faris", "Calligraphe Abu Abdullah Muhammad", "Maître artisan Ibn Ghalib"],
-        position: { x: 45, y: 80},
+        position: { x: 45, y: 80 },
         connections: [5, 6],
         culturalSignificance: "Chef-d'œuvre absolu de l'architecture islamique, cette médersa représente l'harmonie parfaite entre beauté formelle et spiritualité contemplative."
       },

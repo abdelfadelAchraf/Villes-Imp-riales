@@ -134,6 +134,11 @@ const CityItinerary = ({ cityName }) => {
                   alt={place.name} 
                   className="w-full h-48 object-cover rounded-lg shadow-sm" 
                 />
+                 <img 
+                  src={place.image2} 
+                  alt={place.name} 
+                  className="w-full h-48 object-cover rounded-lg shadow-sm  mt-2" 
+                />
               </div>
               <div className="md:col-span-2 mt-4 md:mt-0">
                 <h3 className="text-4xl font-bold text-gray-800">{place.name}</h3>
