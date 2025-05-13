@@ -34,9 +34,7 @@ Mettre en valeur le patrimoine culturel et historique de villes emblématiques d
 ## 🖼️ Aperçu (Suggestion)
 
 *(Il serait excellent d'ajouter ici une ou deux captures d'écran de l'application, ou un GIF animé montrant son fonctionnement.)*
-
-Exemple :
-`![Aperçu Villes Impériales](lien_vers_votre_screenshot.png)`
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/eb3d7c09-aa83-4b89-9e3a-b7cc0e20fc19" />
 
 ## 📁 Structure du Projet (contenu du dossier `frontend/`)
 ```bash
