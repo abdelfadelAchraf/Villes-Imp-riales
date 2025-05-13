@@ -7,6 +7,7 @@ import TargetAudienceCard from '../components/TargetAudienceCard';
 import Approach from '../components/Approach';
 import TestimonialsPage from './TestimonialsPage';
 import { Link } from 'react-router-dom';
+import MarocTourismData from '../components/MarocTourismData';
 
 const HomePage = ({ setActiveCity }) => {
   return (
@@ -27,15 +28,17 @@ const HomePage = ({ setActiveCity }) => {
         <CircuitCard />
         <TargetAudienceCard />
       </div>
+       <Approach />
+      <MarocTourismData/>
 
-      <Approach />
+     
       <hr />
       <TestimonialsPage/>
-      <Link to="/temoignage" onClick={() => window.scrollTo(0, 0)}>
+      {/* <Link to="/temoignage" onClick={() => window.scrollTo(0, 0)}>
   <button className="bg-emerald-600 text-white px-6 py-3 rounded hover:bg-emerald-700 mt-8">
     Partager votre témoignage
   </button>
-</Link>
+</Link> */}
     </div>
   );
 };

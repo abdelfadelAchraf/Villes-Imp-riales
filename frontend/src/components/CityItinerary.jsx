@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { cityData } from '../assets/constants';
-import MarocTourismData from './MarocTourismData';
+// import MarocTourismData from './MarocTourismData';
 
 
 
@@ -157,7 +157,6 @@ const CityItinerary = ({ cityName }) => {
           ))}
         </div>
       )}
-      <MarocTourismData/>
     </div>
   );
 };
