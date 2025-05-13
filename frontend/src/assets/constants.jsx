@@ -76,7 +76,7 @@ export const cityData = {
         name: "Jardin Majorelle",
         description: "Oasis de sérénité créé par le peintre français Jacques Majorelle et sauvegardé par Yves Saint Laurent. Ce jardin botanique aux teintes de bleu cobalt abrite une collection impressionnante de cactus et plantes exotiques du monde entier.",
         image: "https://stayhere.ma/wp-content/uploads/2024/08/shutterstock_2411992785-1-scaled.jpg",
-        image2: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f2/0b/92/marrakech-new-city.jpg?w=1200&h=-1&s=1",
+        image2: "https://www.locmarrakech.com/tourisme/wp-content/uploads/2019/08/Medina.jpg",
 
         famousPeople: ["Jacques Majorelle", "Yves Saint Laurent", "Pierre Bergé"],
         position: { x: 30, y: 50 },
