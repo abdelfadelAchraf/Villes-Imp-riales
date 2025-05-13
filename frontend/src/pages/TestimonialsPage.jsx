@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const TestimonialsPage = () => {
   // Sample testimonial data - in a real app, this would come from an API or database
   const testimonials = [
@@ -379,12 +379,12 @@ const TestimonialsPage = () => {
             Nos circuits vous permettent d'explorer en profondeur le riche patrimoine des villes impériales.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+           <Link to="/iteniraire" onClick={() => window.scrollTo(0, 0)}>
+              <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
               Réserver un Circuit
             </button>
-            <button className="bg-white border-2 border-amber-600 hover:bg-amber-50 text-amber-600 font-bold py-3 px-6 rounded-lg transition-colors">
-              Partager Votre Témoignage
-            </button>
+           </Link>
+           
           </div>
         </div>
       </div>
