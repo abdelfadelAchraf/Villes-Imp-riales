@@ -1,9 +1,8 @@
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![CSS TailWind](https://img.shields.io/badge/TailwindCSS-%23646CFF.svg?style=for-the-badge&logo=TailwindCSS&logoColor=white)
+
 # 🏛️ Villes Impériales
 
 Bienvenue sur le projet **Villes Impériales** ! Une application web interactive dédiée à la découverte des villes impériales du Maroc, réalisée dans le cadre d’un projet culturel et artistique.
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![CSS TailWind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s)
-
 
 ## 🌍 Objectif
 
