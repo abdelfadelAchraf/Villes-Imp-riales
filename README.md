@@ -13,23 +13,23 @@ Mettre en valeur le patrimoine culturel et historique de villes emblématiques d
 * **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
 * **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
   * Accueil (présentation des villes)
- * Contact
- * Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
- * Partager (options de partage sur les réseaux sociaux)
- * Liens utiles (ressources externes, informations touristiques)
- * Résultats (potentiellement pour des quiz, recherches ou filtres)
+  * Contact
+  * Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
+  * Partager (options de partage sur les réseaux sociaux)
+  * Liens utiles (ressources externes, informations touristiques)
+  * Résultats (potentiellement pour des quiz, recherches ou filtres)
 * **Design Responsive :** Expérience utilisateur optimale sur ordinateurs de bureau, tablettes et mobiles.
 * **Performances :** Interface fluide et chargement rapide grâce à l'utilisation de Vite.js.
 
 ## Technologies Utilisées
 
 * **Frontend :**
- * HTML5
- * CSS3
- * JavaScript (ES6+)
+  * HTML5
+  * CSS3
+  * JavaScript (ES6+)
 * **Outils de Développement :**
- * [Vite.js](https://vitejs.dev/) — Bundler et serveur de développement ultra-rapide.
- * Node.js (pour l'environnement d'exécution et la gestion des dépendances via npm ou yarn).
+  * [Vite.js](https://vitejs.dev/) — Bundler et serveur de développement ultra-rapide.
+  * Node.js (pour l'environnement d'exécution et la gestion des dépendances via npm ou yarn).
 
 ## Aperçu (Suggestion)
 
