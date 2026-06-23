@@ -56,35 +56,35 @@ frontend/
 ## Installation et Exécution
 
 **Prérequis :**
-*   [Node.js](https://nodejs.org/) (version LTS recommandée)
-*   npm (généralement inclus avec Node.js) ou yarn
+* [Node.js](https://nodejs.org/) (version LTS recommandée)
+* npm (généralement inclus avec Node.js) ou yarn
 
 **Étapes :**
 
-1.  **Cloner le dépôt :**
-    ```bash
-    git clone https://github.com/abdelfadelAchraf/Villes-Imp-riales.git
-    ```
+1. **Cloner le dépôt :**
+```bash
+git clone https://github.com/abdelfadelAchraf/Villes-Imp-riales.git
+```
 
-2.  **Se rendre dans le dossier du projet frontend :**
-    ```bash
-    cd Villes-Imp-riales/frontend
-    ```
+2. **Se rendre dans le dossier du projet frontend :**
+```bash
+cd Villes-Imp-riales/frontend
+```
 
-3.  **Installer les dépendances :**
-    ```bash
-    npm install
-    ```
-    *(Ou `yarn install` si vous préférez yarn)*
+3. **Installer les dépendances :**
+```bash
+npm install
+```
+*(Ou `yarn install` si vous préférez yarn)*
 
-4.  **Lancer le serveur de développement :**
-    ```bash
-    npm run dev
-    ```
-    *(Ou `yarn dev`)*
+4. **Lancer le serveur de développement :**
+```bash
+npm run dev
+```
+*(Ou `yarn dev`)*
 
-5.  **Ouvrir l’application dans votre navigateur :**
-    L'application sera généralement accessible à l'adresse `http://localhost:5173` (Vite vous indiquera le port exact dans la console).
+5. **Ouvrir l’application dans votre navigateur :**
+L'application sera généralement accessible à l'adresse `http://localhost:5173` (Vite vous indiquera le port exact dans la console).
 
 ## Déploiement (Suggestion)
 
@@ -95,11 +95,11 @@ Exemple : L'application est déployée et accessible ici : [https://votre-lien-d
 
 ## Groupe
 
-*   **Achraf Abdelfadel** – [@abdelfadelAchraf](https://github.com/abdelfadelAchraf)
-*   **Sahraoui Youness** – [@YounessSHR](https://github.com/YounessSHR)
-*   **Mohammed Maataoui Belabbes** – [@momaataoui](https://github.com/momaataoui)
-*   **Ittas Abdelali** – [@0xAl3arab](https://github.com/0xAl3arab)
-*   **Mjahdi Abdelouahab** – ([@AbdelouahabMjahdi](https://github.com/AbdelouahabMjahdi)
-*   **Zakaria Ennaqui** – [@zakariaennaqui](https://github.com/zakariaennaqui)
-*   **SifEddine Toumi** - [@sifeddineftoumi](https://github.com/sifeddineftoumi)
+* **Achraf Abdelfadel** – [@abdelfadelAchraf](https://github.com/abdelfadelAchraf)
+* **Sahraoui Youness** – [@YounessSHR](https://github.com/YounessSHR)
+* **Mohammed Maataoui Belabbes** – [@momaataoui](https://github.com/momaataoui)
+* **Ittas Abdelali** – [@0xAl3arab](https://github.com/0xAl3arab)
+* **Mjahdi Abdelouahab** – ([@AbdelouahabMjahdi](https://github.com/AbdelouahabMjahdi)
+* **Zakaria Ennaqui** – [@zakariaennaqui](https://github.com/zakariaennaqui)
+* **SifEddine Toumi** - [@sifeddineftoumi](https://github.com/sifeddineftoumi)
   // A ajouter Yahya ...
