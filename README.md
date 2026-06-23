@@ -10,33 +10,33 @@ Mettre en valeur le patrimoine culturel et historique de villes emblématiques d
 
 ## Fonctionnalités Principales
 
-*   **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
-*   **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
-    *   Accueil (présentation des villes)
-    *   Contact
-    *   Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
-    *   Partager (options de partage sur les réseaux sociaux)
-    *   Liens utiles (ressources externes, informations touristiques)
-    *   Résultats (potentiellement pour des quiz, recherches ou filtres)
-*   **Design Responsive :** Expérience utilisateur optimale sur ordinateurs de bureau, tablettes et mobiles.
-*   **Performances :** Interface fluide et chargement rapide grâce à l'utilisation de Vite.js.
+* **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
+* **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
+ * Accueil (présentation des villes)
+ * Contact
+ * Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
+ * Partager (options de partage sur les réseaux sociaux)
+ * Liens utiles (ressources externes, informations touristiques)
+ * Résultats (potentiellement pour des quiz, recherches ou filtres)
+* **Design Responsive :** Expérience utilisateur optimale sur ordinateurs de bureau, tablettes et mobiles.
+* **Performances :** Interface fluide et chargement rapide grâce à l'utilisation de Vite.js.
 
 ## Technologies Utilisées
 
-*   **Frontend :**
-    *   HTML5
-    *   CSS3
-    *   JavaScript (ES6+)
-*   **Outils de Développement :**
-    *   [Vite.js](https://vitejs.dev/) — Bundler et serveur de développement ultra-rapide.
-    *   Node.js (pour l'environnement d'exécution et la gestion des dépendances via npm ou yarn).
+* **Frontend :**
+ * HTML5
+ * CSS3
+ * JavaScript (ES6+)
+* **Outils de Développement :**
+ * [Vite.js](https://vitejs.dev/) — Bundler et serveur de développement ultra-rapide.
+ * Node.js (pour l'environnement d'exécution et la gestion des dépendances via npm ou yarn).
 
-## 🖼️ Aperçu (Suggestion)
+## Aperçu (Suggestion)
 
 *(Il serait excellent d'ajouter ici une ou deux captures d'écran de l'application, ou un GIF animé montrant son fonctionnement.)*
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/eb3d7c09-aa83-4b89-9e3a-b7cc0e20fc19" />
 
-## 📁 Structure du Projet (contenu du dossier `frontend/`)
+## Structure du Projet (contenu du dossier `frontend/`)
 ```bash
 frontend/
 ├── index.html
@@ -53,7 +53,7 @@ frontend/
 *Note : La structure ci-dessus propose des options. Adaptez-la à votre organisation réelle. L'originale est simple et fonctionnelle, surtout pour des pages HTML distinctes.*
 *Le dossier `node_modules/` est généré par `npm install` et est typiquement listé dans `.gitignore`.*
 
-## ⚙️ Installation et Exécution
+## Installation et Exécution
 
 **Prérequis :**
 *   [Node.js](https://nodejs.org/) (version LTS recommandée)
@@ -86,14 +86,14 @@ frontend/
 5.  **Ouvrir l’application dans votre navigateur :**
     L'application sera généralement accessible à l'adresse `http://localhost:5173` (Vite vous indiquera le port exact dans la console).
 
-## 🚀 Déploiement (Suggestion)
+## Déploiement (Suggestion)
 
 *(Si vous avez déployé le site, ajoutez un lien ici !)*
 Exemple : L'application est déployée et accessible ici : [https://votre-lien-de-deploiement.com](https://votre-lien-de-deploiement.com)
 
 *(Vous pourriez aussi brièvement décrire les étapes ou la plateforme utilisée pour le déploiement, ex: Vercel, Netlify, GitHub Pages).*
 
-## 👥 Auteurs
+## Groupe
 
 *   **Achraf Abdelfadel** – [@abdelfadelAchraf](https://github.com/abdelfadelAchraf)
 *   **Sahraoui Youness** – [@YounessSHR](https://github.com/YounessSHR)
