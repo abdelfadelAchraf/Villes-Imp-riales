@@ -12,7 +12,7 @@ Mettre en valeur le patrimoine culturel et historique de villes emblématiques d
 
 * **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
 * **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
- * Accueil (présentation des villes)
+  * Accueil (présentation des villes)
  * Contact
  * Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
  * Partager (options de partage sur les réseaux sociaux)
