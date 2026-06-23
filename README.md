@@ -1,27 +1,27 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![CSS TailWind](https://img.shields.io/badge/TailwindCSS-%23646CFF.svg?style=for-the-badge&logo=TailwindCSS&logoColor=white)
 
-# 🏛️ Villes Impériales
+# Villes Impériales
 
 Bienvenue sur le projet **Villes Impériales** ! Une application web interactive dédiée à la découverte des villes impériales du Maroc, réalisée dans le cadre d’un projet culturel et artistique.
 
-## 🌍 Objectif
+## Objectif
 
 Mettre en valeur le patrimoine culturel et historique de villes emblématiques du Maroc telles que Fès, Marrakech, Meknès et Rabat, via une interface web moderne, engageante et accessible.
 
-## ✨ Fonctionnalités Principales
+## Fonctionnalités Principales
 
-*   📜 **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
-*   🗺️ **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
+*   **Découverte Culturelle :** Présentation détaillée de plusieurs villes impériales marocaines (Fès, Marrakech, Meknès, Rabat).
+*   **Navigation Intuitive :** Accès facile aux différentes sections thématiques :
     *   Accueil (présentation des villes)
     *   Contact
     *   Réserver (si une fonctionnalité de réservation est implémentée ou prévue)
     *   Partager (options de partage sur les réseaux sociaux)
     *   Liens utiles (ressources externes, informations touristiques)
     *   Résultats (potentiellement pour des quiz, recherches ou filtres)
-*   📱 **Design Responsive :** Expérience utilisateur optimale sur ordinateurs de bureau, tablettes et mobiles.
-*   ⚡ **Performances :** Interface fluide et chargement rapide grâce à l'utilisation de Vite.js.
+*   **Design Responsive :** Expérience utilisateur optimale sur ordinateurs de bureau, tablettes et mobiles.
+*   **Performances :** Interface fluide et chargement rapide grâce à l'utilisation de Vite.js.
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
 *   **Frontend :**
     *   HTML5
